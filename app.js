@@ -69,12 +69,12 @@ function getUserMedia(options, successCallback, failureCallback) {
 
 function takePhoto() {
     if (!('ImageCapture' in window)) {
-        alert('ImageCapture is not available');
+        alert('imagem não disponível');
         return;
     }
 
     if (!theStream) {
-        alert('Grab the video stream first!');
+        alert('primeiro permita o acesso à camera');
         return;
     }
 
@@ -86,3 +86,4 @@ function takePhoto() {
             theImageTag.src = URL.createObjectURL(blob);
         })
         .catch(err => alert('Error: ' + err));
+}
