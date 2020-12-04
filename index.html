@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Exemplo PWA - Dojo Lukas Teles</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="manifest" href="/manifest.webmanifest">
+</head>
+
+<body>
+  <nav class="orange lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Exemplo PWA</a>
+    </div>
+
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="row center">
+        <h5 class="header col s12 light">Exemplo utilizando reursos apresentados no Dojo sobre PWA</h5>
+      </div>
+      <div class="row center">
+        <button class="waves-effect waves-light btn" onclick="getPermition()"><i
+            class="material-icons right">notifications</i>Ativar
+          notificações</button>
+        <button class="waves-effect waves-light btn" onclick="showNotification()"><i
+            class="material-icons right">notifications_active</i>Testar
+          notificação</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="row center">
+        <p><button class="waves-effect waves-light btn" onclick="getStream()">Ativar video</button></p>
+        <p><video autoplay style="height: 180px; width: 240px;"></video></p>
+        <p><button class="waves-effect waves-light btn" onclick="takePhoto()">Tirar foto</button></p>
+        <p><img id="imageTag" width="240" height="180"></p>
+      </div>
+    </div>
+
+    <footer class="page-footer orange">
+      <div class="footer-copyright">
+        <div class="container">
+          Feito por <a class="orange-text text-lighten-3" href="http://github.com/lukastteles">Lukas Teles</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
